@@ -7,10 +7,15 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      helvetica: ["var(--font-helvetica)"],
+      "helvetica-bold": ["var(--font-helvetica-bold)"],
+      "helvetica-light": ["var(--font-helvetica-light)"],
+    },
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      backgroundImage: {
+        register:
+          "url('./assets/bg-register-page.png'), url('./assets/bg-register2-page.png')",
       },
     },
   },
